@@ -8,7 +8,7 @@ import express from "express"
 import { socketAuthMiddleware } from "../middleware/socket.auth.middleware.js";
 
 
-const FRONTEND_URL= process.env.FRONTEND_URl
+const FRONTEND_URL= process.env.FRONTEND_URL
 if(!FRONTEND_URL) throw new Error("Front URL Environment Varibale Not loaded.");
 
 const app = express();
